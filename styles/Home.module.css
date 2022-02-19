@@ -5,8 +5,22 @@
   background-repeat: no-repeat;
   background-image: url("https://images.pexels.com/photos/258160/pexels-photo-258160.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
   flex: 1;
-  height: 60vh;
+  height: 65vh;
   width: 100%;
   display: flex;
   flex-direction: row;
+}
+
+.banner {
+  padding: 20px;
+  margin-top: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+  flex: 1;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  position: relative;
+  height: 46vh;
 }
