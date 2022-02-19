@@ -1,0 +1,12 @@
+.container {
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: url("https://images.pexels.com/photos/258160/pexels-photo-258160.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+  flex: 1;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
