@@ -4,6 +4,7 @@ import Head from "next/head";
 import Header from "../components/header";
 
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 export default function Home() {
   const [loading, setLoading] = React.useState(undefined);
@@ -100,33 +101,45 @@ export default function Home() {
   };
 
   const CTA = () => {
-    const Item = ({ title, subtitle, color }) => {
+    const Item = ({ title, href, subtitle, color }) => {
       return (
-        <div
-          style={{
-            height: 200,
-            width: "50%",
-            backgroundColor: color,
-            padding: 20,
-          }}
-        >
+        <Link href={href}>
           <div
             style={{
-              fontSize: 22,
-              fontWeight: "bold",
-              color: color === "#FFF" ? "#1A3A69" : "#FFF",
+              height: 200,
+              width: "50%",
+              backgroundColor: color,
+              padding: 20,
             }}
           >
-            {title}
+            <div
+              style={{
+                fontSize: 22,
+                fontWeight: "bold",
+                color: color === "#FFF" ? "#1A3A69" : "#FFF",
+              }}
+            >
+              {title}
+            </div>
           </div>
-        </div>
+        </Link>
       );
     };
 
     return (
       <div style={{ display: "flex", flexDirection: "row" }}>
-        <Item title="Para instituições" subtitle="..." color="#1A3A69" />
-        <Item title="Para profissionais" subtitle="..." color="#FFF" />
+        <Item
+          title="Para instituições"
+          subtitle="..."
+          href="/instituicoes"
+          color="#1A3A69"
+        />
+        <Item
+          title="Para profissionais"
+          subtitle="..."
+          href="/profissional"
+          color="#FFF"
+        />
       </div>
     );
   };

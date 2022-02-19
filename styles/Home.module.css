@@ -11,7 +11,21 @@
   flex-direction: row;
 }
 
-.banner {
+.bannerinstituicoes {
+  padding: 20px;
+  margin-top: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://images.pexels.com/photos/1024248/pexels-photo-1024248.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+  flex: 1;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  position: relative;
+  height: 46vh;
+}
+
+.bannerprofissional {
   padding: 20px;
   margin-top: 30px;
   background-size: cover;

@@ -119,7 +119,7 @@ const Profissional = () => {
 
   const Banner = () => {
     return (
-      <div className={styles.banner}>
+      <div className={styles.bannerprofissional}>
         <div
           style={{ zIndex: 1, color: "#FFF", fontSize: 22, fontWeight: "bold" }}
         ></div>
